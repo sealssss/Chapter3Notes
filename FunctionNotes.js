@@ -24,8 +24,8 @@ printMax();*/
 
 function printMax(x, y){
     if (x>y);{
-        console.log(`the larger number is ${x}`);
-    } else {
+        console.log(`the larger number is ${x}`);{
+        } else {
         console.log(`the larger number is ${y}`);
     }
 }
@@ -34,8 +34,13 @@ function printMax(x, y){
 // printMax(2,2);
 // printMax(-8,21);
 
-function sum(number1, number2){
-    {
-    console.log(`${Number1} + ${Number2} = ${number1+number2}`);
+    function sum(num1, num2){
 
+        console.log(`${num1}+${num2}=${num1+num2}`);
+
+    }
+
+    sum(7, 10);
+
+    sum(27, 1);
 
