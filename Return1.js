@@ -11,11 +11,14 @@ let myName = nameSwapper();
 console.log(myName);
 
 //qq2
-function numberGenerator(indiv1, invid2){
-console.log(indiv1 + invid2);
+function numberGenerator(inital0, inital9){
+console.log(inital0+ inital9);
+return (0+9);
 }
 
 //qq3
 function aug(temp1,temp2,temp3,temp4,temp5,temp6,temp7) {
     console.log(`${temp1},+${temp2},+${temp3},+${temp4},+${temp5},+${temp6},=${temp7}`)
 }
+
+//qq4
