@@ -2,11 +2,12 @@ const readLine = require('readline-sync');
 
 let diceRolled = [];
 let eyeColors = ['blue', 'green', 'brown', 'hazel'];
-let character1 = {
+let character = {
+
     //empty for now
 };
 
-createChar(character1, diceRolled);
+createChar(diceRolled);
 
 function rolld6(){
     return Math.ceil(Math.random()*6)
@@ -26,15 +27,22 @@ function sum(list){
     }
     return sum;
 }
-            function pickRandomChoice(choices) {
-            let randomNum = Math.floor(Math.random() * choices.length);
-            return choices[randomNum];
-        }
+
+function rollStat(list){
+    list=[];
+    rollDice(4,list);
+    return sum(list)
+
+}
+
+function pickRandomChoice(choice){
+    let randomNum = Math.floor(Math.random()*choice.length);
+}
 
 function createChar(list){
-    character.name=readLine.question("Enter Character Name:");
-            character.eyeColor = pickRandomChoice(eyeColors);
+            character.name = readLine.question("Enter Character Name: ");
             console.log('Rolling STR');
+            character.eyeColor = pickRandomChoice(diceRolled);
             character.strength = rollStat(diceRolled);
             console.log('Rolling DEX');
             character.dexterity = rollStat(diceRolled);
@@ -46,13 +54,11 @@ function createChar(list){
             character.wisdom = rollStat(diceRolled);
             console.log('Rolling CHA');
             character.charisma = rollStat(diceRolled);
-            let randomNum= Math.floor(Math.random()*choice.length);
+            character.luck = rollStat(diceRolled);
             console.log(character);
-    displayChar(char);
-
-        }
-
-        function displayChar(char) {
+    console.log(character);
+}
+function displayChar(char){
                 console.log('----------------------------');
                 console.log(`Name: ${char.name}`);
                 console.log(`STR: ${char.strength}`);
@@ -62,7 +68,8 @@ function createChar(list){
                 console.log(`INT: ${char.intelligence}`);
                 console.log(`WIS: ${char.wisdom}`);
                 console.log(`CHA: ${char.charisma}`);
-                console.log(`${char.luck}`);
+                console.log(`LUC: ${char.luck}`);
             }
+
 
 
