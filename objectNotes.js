@@ -3,7 +3,7 @@ let contacts = {
     bff: 1234567,
     mom: 5555555,
     bro: 9876543
-}
+};
 
 //log all
 console.log(contacts);
