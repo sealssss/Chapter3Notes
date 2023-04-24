@@ -5,8 +5,9 @@ const readLine=require('readline-sync');
 //and repeat
 
 
-let arraysList=[noun];
-let readline;
-arraysList.push(readline.question('Enter a verb:'));
-arraysList.push(readLine.question('Enter a noun'));
-console.log('arraysList has ${arraysList[0]} and ${arraysList[1]');
+// let arraysList=[noun];
+// let readline;
+// arraysList.push(readline.question('Enter a verb:'));
+// arraysList.push(readLine.question('Enter a noun'));
+// console.log('arraysList has ${arraysList[0]} and ${arraysList[1]');
+
