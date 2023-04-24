@@ -91,17 +91,3 @@ let person = {
     hobby: 'video gamer',
 }
 console.log(person);
-
-let sandwiches = {
-    chickenSandwich: 5.25,
-    beefSandwich: 6.25,
-    tofuSandwich: 5.75
-};
-
-console.log(sandwiches);
-
-let answers=['chicken sandwich', 'Beef Sandwich', 'tofu Sandwich'];
-
-let randomNum = Math.floor(Math.random()*answers.length);
-let answer = answers[randomNum];
-console.log(answer);
